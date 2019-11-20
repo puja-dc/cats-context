@@ -1,0 +1,47 @@
+@import url('https://use.typekit.net/zym8hos.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: droid-sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1 {
+  text-align: center;
+  color: #8456b5;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+  color: #333;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.btn {
+  background: #f8f2fe;
+  color: #333;
+  font-size: 20px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15%;
+  border: #ccc solid 1px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
