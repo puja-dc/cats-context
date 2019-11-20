@@ -11,6 +11,13 @@ const Activity = () => {
       activity: e.target.value
     });
   };
+  const handleChange = e => {
+    e.preventDefault();
+    dispatch({
+      type: 'changeName',
+      newName: e.target.value
+    });
+  };
 
   return (
     <div>
@@ -22,6 +29,14 @@ const Activity = () => {
       </h1>
       <p>
         {value.name} is {value.activity}.
+      </p>
+      <p>
+        <input
+          type='text'
+          name='newName'
+          placeholder='Cat Name'
+          onChange={handleChange}
+        />
       </p>
       <ul>
         <li>

@@ -17,6 +17,11 @@ function App() {
           ...state,
           activity: action.activity
         };
+      case 'changeName':
+        return {
+          ...state,
+          name: action.newName
+        };
       default:
         return state;
     }
